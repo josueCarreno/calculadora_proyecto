@@ -7,46 +7,53 @@
   <title>Calculadora</title>
 </head>
 <body class="bg-[#1A2331]">
-  <section class="w-full min-h-screen p-4 flex items-center justify-center flex-col">
+  <main class="w-full min-h-screen p-4 flex items-center justify-center flex-col">
+    <!-- Encabezado de la Calculadora -->
     <h1 class="text-3xl font-bold text-white text-center mb-8">Calculadora Avanzada</h1>
-    
-    <div class="bg-black rounded-3xl w-full   flex flex-col p-6 max-w-sm">
+    <!-- Contenedor Principal de la Calculadora -->
+    <section class="bg-black rounded-3xl w-full   flex flex-col p-6 max-w-sm">
+      <!-- Logo de la Calculadora -->
       <div class="  w-full flex justify-center mb-4 ">
         <img src="./images/calculadora.svg" alt="">
       </div>
+      <!-- Contenido de la Calculadora -->
       <form  name="calculadora">
+        <!-- Entrada de la Calculadora -->
         <div class="bg-black  w-full flex justify-center mb-4 p-6 border border-gray-800 rounded-2xl">
           <input type="text" name="entrada" class="text-2xl text-white h-12 w-full text-right placeholder:text-white" placeholder="0" readonly>
         </div>
+        <!-- Botones de la Calculadora -->
         <div class="grid grid-cols-5 gap-2">
+          <!-- Prinera Fila -->
           <input type="reset" class="bg-gray-500 hover:bg-gray-400 cursor-pointer rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px] " value="C">
           <input type="button" id="borrar" class="bg-gray-500 hover:bg-gray-400 cursor-pointer rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="⌫">
           <input type="button" class="boton bg-gray-500 hover:bg-gray-400 cursor-pointer rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="(">  
           <input type="button" class="boton bg-gray-500 hover:bg-gray-400 cursor-pointer rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value=")"> 
           <input type="button" class="boton bg-orange-500 hover:bg-orange-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="÷"> 
-          
+          <!-- Segunda Fila -->
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="7"> 
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="8"> 
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="9">
           <input type="button" class="boton bg-orange-500 hover:bg-orange-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="x">
           <input type="button" class="boton bg-orange-500 hover:bg-orange-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="^">
-          
+          <!--  Tercera Fila -->
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="4">  
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="5">  
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="6"> 
           <input type="button" class="boton bg-orange-500 hover:bg-orange-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="-">
           <input type="button" id="resultado" class="bg-green-500 hover:bg-green-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="="></input>
-          
+          <!-- Cuarta Fila -->
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="1"> 
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="2"> 
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="3">
           <input type="button" class="boton bg-orange-500 hover:bg-orange-400 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="+">
-          
+          <!-- Quinta Fila -->
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px] col-span-2" value="0"> 
           <input type="button" class="boton bg-gray-700 hover:bg-gray-600 cursor-pointer text-white rounded-lg h-12 md:h-14 font-semibold flex items-center justify-center text-[18px]" value="."> 
         </div>
       </form>
-  </section>
+    </section>
+  </main>
   <script src="./index.js"></script>
 </body>
 </html>

@@ -4,9 +4,9 @@ document.querySelectorAll('.boton').forEach(boton => {
           let entrada = document.calculadora.entrada.value + this.value;
           let entrada_regex = /^[0-9]+$/;
 
-          if(entrada_regex.test(entrada) ) {
+          //if(entrada_regex.test(entrada) ) {
             document.calculadora.entrada.value  += this.value;
-          }
+          //}
         
         });
     });
